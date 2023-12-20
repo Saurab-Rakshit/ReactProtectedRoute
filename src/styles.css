@@ -1,0 +1,12 @@
+nav {
+    background-color: sandybrown;
+    padding: 16px 500px;
+}
+nav a:link {
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;  
+  font-weight: bold;
+}
+  

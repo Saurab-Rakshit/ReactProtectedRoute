@@ -1,0 +1,11 @@
+Step 1 : First we created Profile Route which would be protected.
+
+Step 2 : We implemented the functionality of Login & Logout user in the auth.jsx file for that we relyied on React Context & provided the context value to the entire component tree.
+
+Step 3: After that we implemented the Login Page component, we used the AuthContext to sign in & the navigate function to redirect, In the Profile Page we used the same AuthContext to display the logged in user & handle logout button
+
+Step 4 : Finally we created the RequiredAuth component to check the user is logged in or not ,if the user is not logged in it redirects to the Loggedin Route & if the user is logged in it renders the 'children' prop.
+
+Step 5 : We wrap any component that needs to be protected with RequireAuth component this is done when we configure the particular route
+
+Step 6 : we use {replace:true} to prevent the user from viewing the login page after logging in & used location magic using useLocation hook from react-router-dom to keep track of redirection.
